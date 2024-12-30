@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+.clangd
+*.log
+tmp/
+*.out
