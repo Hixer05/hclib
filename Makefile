@@ -8,8 +8,7 @@
 TARGET_EXEC := test
 
 BUILD_DIR := ./build
-SRC_DIRS := ./src
-H_DIRS := ./include
+SRC_DIRS := ./include
 
 # Find all the C  files we want to compile
 # Note the single quotes around the * expressions. The shell will incorrectly expand these otherwise, but we want to send the * directly to the find command.
@@ -24,7 +23,7 @@ OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 DEPS := $(OBJS:.o=.d)
 
 # Every folder in ./src will need to be passed to GCC so that it can find header files
-INC_DIRS := $(shell find $(H_DIRS) -type d)
+INC_DIRS := $(shell find $(SRC_DIRS) -type d)
 # Add a prefix to INC_DIRS. So moduleA would become -ImoduleA. GCC understands this -I flag
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 

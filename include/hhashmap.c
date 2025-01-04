@@ -1,6 +1,6 @@
-#include "../include/hhashmap.h"
-#include "../include/hmath.h"
-#include "../include/hstrlib.h"
+#include "hhashmap.h"
+#include "hmath.h"
+#include "hstrlib.h"
 
 const size_t hash1(char const *const key) {
   // polynomial rolling hash function.

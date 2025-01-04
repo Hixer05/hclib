@@ -3,7 +3,8 @@
 #include<stddef.h>
 #include<stdbool.h>
 
-extern const size_t strlen(const char*const str);
-extern void strcat(char*const dest, const char*const src);
-extern const bool strcmp(const char*const str1, const char*const str2);
+const size_t strlen(const char*const str);
+void strcat(char*const dest, const char*const src);
+const bool strcmp(const char*const str1, const char*const str2);
+void strcpy(char*const dest, const char*const src);
 #endif // HSTRLIB_H_

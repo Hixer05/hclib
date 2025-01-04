@@ -1,4 +1,4 @@
-#include "../include/hmath.h"
+#include "hmath.h"
 
 const int ipow(const int a, const unsigned int e){
     int output = a;
