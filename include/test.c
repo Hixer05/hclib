@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include "hbignum.h"
+#include "hstrlib.h"
 #include<stdbool.h>
 #include<inttypes.h>
 
@@ -19,5 +20,10 @@ int main(){
         b=tmp;
         j += sprintf(buf+j, "%u %u %u %u\n", a[3], a[2], a[1], a[0]);
     }
+
     printf("%s", buf);
+    char torev[50] = "asdff";
+    printf("%s reverse: ", torev);
+    reverse(torev);
+    printf("%s\n", torev);
 }

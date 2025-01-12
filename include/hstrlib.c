@@ -29,3 +29,14 @@ void strcpy(char*const dest, const char*const src){
        dest[i] = src[i];
     }while(src[i]!='\0');
 }
+
+
+void reverse(char*const str){
+    // (int) (2n+1)/2 == n
+    const size_t len = strlen(str);
+    for(int i = 0; i<len/2; i++){
+        char tmp = str[i];
+        str[i] = str[len-i-1];
+        str[len-i-1] = tmp;
+    }
+}
