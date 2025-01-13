@@ -27,7 +27,7 @@ void strcpy(char*const dest, const char*const src){
     int i = 0;
     do{
        dest[i] = src[i];
-    }while(src[i]!='\0');
+    }while(src[i++]!='\0');
 }
 
 
